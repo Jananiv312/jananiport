@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semester VI - Course List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000; /* Light background, similar to the portfolio */
+            text-align: center;
+            color: #333; /* Dark text for readability */
+        }
+        h2 {
+            color: #4A6572; /* Dark teal for headings, matching the portfolio's accent */
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            color: antiquewhite;
+            background: #374242;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: center;
+        }
+        th {
+            background: #000000; /* Dark teal for headers, matching the portfolio's accent */
+            color: white;
+        }
+        .view-btn {
+            background: #289aa7; /* Green for buttons, keep it for action */
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background 0.3s ease; /* Smooth transition for hover effect */
+        }
+        .view-btn:hover {
+            background: #219c9c; /* Darker green on hover */
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #27a3a1; /* Dark teal for the navigation bar */
+            overflow: hidden;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline-block;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            background-color: #020303; /* Darker teal on hover */
+        }
+        button {
+  color: #090909;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+button:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+    </style>
+</head>
+<body>
+    <header style="background-color: black;"> <nav class="navbar navbar-expand-lg por" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img style="width: 80px;height: 70px;border-radius: 80px;" src="asset/image/61acf152-268f-419e-8938-cfeddb5a55a5.jpeg"></a></a>
+       
+          <div >
+            <ul >
+              <li >
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li><a   href="Skills.html">Skills</a></li>
+            <li><a   href="Experience.html">Experience</a></li>
+            <li><a  href="assismentfolio.html">Assignment</a></li>
+            <li><a  href="education.html">Education</a></li>
+            <li><a  href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav> 
+    </header>
+
+    <h2>Semester VI (PROTOSEM STREAM)</h2>
+
+    <table>
+        <tr>
+            <th>Sl. No.</th>
+            <th>Course Code</th>
+            <th>Course Title</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>22PSPE01</td>
+            <td>Computational Hardware</td>
+            <td><button class="view-btn">View</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>22PSPE02</td>
+            <td>Coding for Innovators</td>
+            <td><button class="view-btn">View</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>22PSPE03</td>
+            <td>Industrial Automation</td>
+            <td><button class="view-btn">View</button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>22PSOE01</td>
+            <td>Applied Design Thinking</td>
+            <td><button class="view-btn">View</button></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>22PSOE02</td>
+            <td>Startup Fundamentals</td>
+            <td><button class="view-btn">View</button></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>22PSOE03</td>
+            <td>Prototype Development</td>
+            <td><button class="view-btn">View</button></td>
+        </tr>
+    </table>
+
+    <script>
+        function viewDetails(courseName) {
+            alert("Viewing details for: " + courseName);
+        }
+    </script>
+</body>
+</html>
