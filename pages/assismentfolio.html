@@ -68,96 +68,179 @@
         nav li a:hover {
             background-color: #020303; /* Darker teal on hover */
         }
+        
         button {
-  color: #090909;
-  padding: 0.7em 1.7em;
-  font-size: 18px;
-  border-radius: 0.5em;
-  background: #e8e8e8;
+  
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 1.5rem sans-serif;
   cursor: pointer;
-  border: 1px solid #e8e8e8;
-  transition: all 0.3s;
-  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+  will-change: transform;
 }
 
-button:active {
-  color: #666;
-  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+button::before,
+button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  background-color:rgb(28, 19, 24);
+  transition: all 250ms ease-in-out;
+}
+
+button::before {
+  width: 2px;
+  
+  box-shadow: 298px 0 rgb(28, 19, 24);
+}
+
+button::after {
+  height: 2px;
+  
+  box-shadow: 0 98px rgb(28, 19, 24);
+}
+
+button:hover::before {
+  left: -10px;
+  box-shadow: 318px 0 rgb(28, 19, 24);
+}
+
+button:hover::after {
+  top: -10px;
+  box-shadow: 0 118px rgb(28, 19, 24);
 }
     </style>
 </head>
-<body>
-    <header style="background-color: black;"> <nav class="navbar navbar-expand-lg por" >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img style="width: 80px;height: 70px;border-radius: 80px;" src="asset/image/61acf152-268f-419e-8938-cfeddb5a55a5.jpeg"></a></a>
+<body><header > <nav class="navbar navbar-expand-lg por" >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img style="width: 80px;height: 70px;border-radius: 80px;" src="asset/image/61acf152-268f-419e-8938-cfeddb5a55a5.jpeg"></a></a>
        
-          <div >
+          <div>
             <ul >
               <li >
-                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                <a class="nav-link active view-btn" aria-current="page" href="home.html">Home</a>
             </li>
-            <li><a   href="Skills.html">Skills</a></li>
-            <li><a   href="Experience.html">Experience</a></li>
-            <li><a  href="assismentfolio.html">Assignment</a></li>
-            <li><a  href="education.html">Education</a></li>
-            <li><a  href="contact.html">Contact</a></li>
+              
+            <li><a  class=" nav-link active view-btn" href="Skills.html">Skills</a></li>
+            <li><a   class="nav-link active view-btn"href="Experience.html">Experience</a></li>
+            <li><a  class="nav-link active view-btn"href="assismentfolio.html">Assignment</a></li>
+            <li><a  class="nav-link active view-btn"href="education.html">Education</a></li>
+            <li><a  class="nav-link active view-btn"href="contact.html">Contact</a></li>
             </ul>
-          </div>
         </div>
-      </nav> 
-    </header>
+      </div>
+    </nav> 
+  </header>
+    <div style="margin-bottom: 40px;">
+        <h3 style="color: #fff;">Week 1 - ProtoSem 3.3: Laser-Cut Sphere Design -Segmented Spherical Interlock in Fusion 360</h3>
+        <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+            <img src="asset/image/LASERCUTSP.png" alt="Sphere" style="width: 300px; margin: 10px; border-radius: 5px;">
+            <img src="asset/image/laserthumb.png" alt="Sphere Design Document Thumbnail" style="width: 300px; margin: 10px;border-radius: 5px; border: 1px solid #555;">
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="https://docs.google.com/document/d/1ZhRAUcMF_0E_LUQ0L_I1nj4HRcYLEcthXFdymuOMEm4/edit?usp=sharing" style="text-decoration: none; background-color: #008080; color: white; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">OPEN</a>
+        </div>
+    </div>
 
-    <h2>Semester VI (PROTOSEM STREAM)</h2>
+    <div style="margin-bottom: 40px;">
+        <h3 style="color: #fff;">WEEK 2 – System Thinking</h3>
+        <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+            <img src="asset/image/system-thinking.jpg" alt="System Thinking" style="width: 250px; margin: 10px; border-radius: 5px;">
+            <img src="asset/image/systemthinkingtb.png" alt="System Thinking Document Thumbnail" style="border-radius: 5px;width: 300px; margin: 10px; border: 1px solid #555;">
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="https://docs.google.com/document/d/14P2q_ivLGbxIA6vJVOLYnYxBlFkneBVkTEQXV6Davqs/edit?usp=sharing" style="text-decoration: none; background-color: #008080; color: white; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">OPEN</a>
+        </div>
+    </div>
 
-    <table>
-        <tr>
-            <th>Sl. No.</th>
-            <th>Course Code</th>
-            <th>Course Title</th>
-            <th>Action</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>22PSPE01</td>
-            <td>Computational Hardware</td>
-            <td><button class="view-btn">View</button></td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>22PSPE02</td>
-            <td>Coding for Innovators</td>
-            <td><button class="view-btn">View</button></td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>22PSPE03</td>
-            <td>Industrial Automation</td>
-            <td><button class="view-btn">View</button></td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>22PSOE01</td>
-            <td>Applied Design Thinking</td>
-            <td><button class="view-btn">View</button></td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>22PSOE02</td>
-            <td>Startup Fundamentals</td>
-            <td><button class="view-btn">View</button></td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>22PSOE03</td>
-            <td>Prototype Development</td>
-            <td><button class="view-btn">View</button></td>
-        </tr>
-    </table>
+    <div style="margin-bottom: 40px;">
+        <h3 style="color: #fff;">Week 3 – Coding for Innovators –Logical thinking and Application devloped using MIT App invetor </h3>
+        <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+            <img src="asset/image/thinklikeacoder (1).png" alt="Coding" style="width: 300px; margin: 10px; border-radius: 5px;">
+            <img src="asset/image/thinklikeacoder (2).png" alt="Coding Document Thumbnail" style="border-radius: 5px;width: 300px; margin: 10px; border: 1px solid #555;">
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="https://docs.google.com/document/d/1LtA8BSX5MnXtilFhEWZ9gYB5rr2PT-psZP8_r263OTo/edit?usp=sharing" style="text-decoration: none; background-color: #008080; color: white; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">OPEN</a>
+        </div>
+    </div>
+    <div style="margin-bottom: 40px;">
+        <h3 style="color: #fff;">Week 4 – Portfolio Using HTML, CSS & GitHub Hosting</h3>
+        <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+            <img src="asset/image/png-transparent-logo-html-html5-thumbnail.png" alt="HTML Logo" style="width: 80px; height: 80px; margin: 10px;">
+            <img src="asset/image/images.png" alt="CSS Logo" style="width: 80px; height: 80px; margin: 10px;">
+            <img src="asset/image/gitlogo.jpg" alt="GitHub Logo" style="width: 80px; height: 80px; margin: 10px;">
+            <img src="asset/image/portb (1).png" alt="Portfolio Document Thumbnail" style="border-radius: 5px;width: 300px; margin: 10px; border: 1px solid #555;">
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="https://docs.google.com/document/d/1uvX0VeJ99DBLIqSc735dOp8rqyFkq9QoK6D_StCRUng/edit?usp=sharing" style="text-decoration: none; background-color: #008080; color: white; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">OPEN</a>
+        </div>
+    </div>
 
-    <script>
-        function viewDetails(courseName) {
-            alert("Viewing details for: " + courseName);
-        }
-    </script>
+    <div style="margin-bottom: 40px;">
+        <h3 style="color: #fff;">Week 5 – APPLIED DESIGN THINKING</h3>
+        <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+            <img src="asset/image/militarytable.png" alt="Table Design" style="width: 300px; margin: 10px; border-radius: 5px;">
+            <img src="asset/image/utmttb.png" alt="Design Thinking Document Thumbnail" style="border-radius: 5px;width: 300px; margin: 10px; border: 1px solid #555;">
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="https://docs.google.com/presentation/d/10NGlkY7r53zhZt5prjzS8606Lh_7EgY140N7NPaQjKc/edit?usp=sharing" style="text-decoration: none; background-color: #008080; color: white; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">OPEN</a>
+        </div>
+    </div>
+
+    <div style="margin-bottom: 40px;">
+        <h3 style="color: #fff;">Week 6 – Understanding Sensor</h3>
+        <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+            <img src="asset/image/sen.png" alt="Table Design" style="width: 300px; margin: 10px; border-radius: 5px;">
+            <img src="asset/image/sentb.png" alt="Design Thinking Document Thumbnail" style="border-radius: 5px;width: 300px; margin: 10px; border: 1px solid #555;">
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="https://drive.google.com/file/d/1fnyqezZNufd3KVvMgGz-TCPxuVDSHWu5/view?usp=sharing" style="text-decoration: none; background-color: #008080; color: white; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">OPEN</a>
+        </div>
+    </div>
+
+       <div style="margin-bottom: 40px;">
+        <h3 style="color: #fff;">Week 7 – Computational Hardware</h3>
+        <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+            <img src="asset/image/ch (2).png" alt="Table Design" style="width: 300px; margin: 10px; border-radius: 5px;">
+            <img src="asset/image/ch (3).png" alt="Design Thinking Document Thumbnail" style="border-radius: 5px;width: 300px; margin: 10px; border: 1px solid #555;">
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="https://drive.google.com/file/d/1hG2Y_u3gsQfYXb_WjkKEJCT1EF7IFhOh/view?usp=drive_link" style="text-decoration: none; background-color: #008080; color: white; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">OPEN</a>
+        </div>
+    </div>
+
+    <div style="margin-bottom: 40px;">
+        <h3 style="color: #fff;">Week 8 – UI/UX</h3>
+        <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+            <img src="asset/image/download.png" alt="Table Design" style="width: 300px; margin: 10px; border-radius: 5px;">
+            <img src="asset/image/uitb.png" alt="Design Thinking Document Thumbnail" style="border-radius: 5px;width: 300px; margin: 10px; border: 1px solid #555;">
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="https://drive.google.com/file/d/1u1oH5XP3oVGJ4xSi6mUGoextvzW-sXfA/view?usp=sharing" style="text-decoration: none; background-color: #008080; color: white; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">OPEN</a>
+        </div>
+    </div>
+    <div style="margin-bottom: 40px;">
+        <h3 style="color: #fff;">Week 9 – PCB Design</h3>
+        <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+            <img src="asset/image/kicad-v8.jpg" alt="Table Design" style="width: 300px; margin: 10px; border-radius: 5px;">
+            <img src="asset/image/pcbtb.png" alt="Design Thinking Document Thumbnail" style="border-radius: 5px;width: 300px; margin: 10px; border: 1px solid #555;">
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="https://drive.google.com/drive/folders/1CZ1nFzP3iBOFLZrf6c9zRQINab_nPAmn?usp=sharing" style="text-decoration: none; background-color: #008080; color: white; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">OPEN</a>
+        </div>
+    </div>
+    <div style="margin-bottom: 40px;">
+        <h3 style="color: #fff;">Week 10 – ROS</h3>
+        <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
+            <img src="asset/image/rosgazebo.png" alt="Table Design" style="width: 300px; margin: 10px; border-radius: 5px;">
+            <img src="asset/image/rostb.png" alt="Design Thinking Document Thumbnail" style="border-radius: 5px;width: 300px; margin: 10px; border: 1px solid #555;">
+        </div>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="https://drive.google.com/drive/folders/1tN3OZSTkqfRGSXY9uahZSRl6i9HFGkDL?usp=sharing" style="text-decoration: none; background-color: #008080; color: white; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s;">OPEN</a>
+        </div>
+    </div>
 </body>
 </html>
